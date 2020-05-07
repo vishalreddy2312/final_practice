@@ -18,7 +18,7 @@ def test_grid_analysis():
         grid.append(row)
     new_grid, victim_name, victim_count, vic_plot, time_step = covid_G2.grid_analysis(grid, height, width)
     def test_sub_1(new_grid, victim_name, victim_count, vic_plot, time_step):
-        return True if new_grid is not [] and victim_name is not [] and victim_count is not 0 and vic_plot is not [] and time_step is not 0 else False
+        return True if new_grid is != [] and victim_name is != [] and victim_count is != 0 and vic_plot is != [] and time_step is != 0 else False
     assert test_sub_1(new_grid, victim_name, victim_count, vic_plot, time_step) is True
 
 def test_finding_victims():
@@ -39,7 +39,7 @@ def test_finding_victims():
     adjacent_grid = [grid[i][j + 1], grid[i + 1][j], grid[i + 1][j + 1]]
     victim_name, victim_count, vic_plot = covid_G2.finding_victims(adjacent_grid, victim_name, victim_count, time_step, vic_plot)
     def test_sub_2( victim_name, victim_count, vic_plot):
-        return True if victim_name is not [] and victim_count is not 0 and vic_plot is not [] else False
+        return True if victim_name is != [] and victim_count is != 0 and vic_plot is != [] else False
 
     assert test_sub_2(victim_name, victim_count, vic_plot) is True
 

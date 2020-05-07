@@ -1,4 +1,4 @@
-from app import*
+import app 
 
 import pytest
 

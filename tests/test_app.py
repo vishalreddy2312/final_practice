@@ -4,7 +4,7 @@ import pytest
 
 
 def test_general_people_info():
-    assert covid_G2.generate_people_info() is not None
+    assert app.generate_people_info() is not None
 
 
 def test_grid_analysis():

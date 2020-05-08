@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Deployment into docker 
       run: |
-        docker rm -f pytest-container
+        if docker ps -a | grep pytest-container ; then docker rm -f pytest-container; fi
         docker build -t python-image .
         docker run --name pytest-container --env PYTHONPATH=src python-image:latest

@@ -6,7 +6,7 @@ Topic - Corona Virus Spread rate on Human Beings.
 Authors:
 1. Shyam Sundar Murali Krishnan (113475983), shyamkrishnan@ou.edu, University Of Oklahoma.
 2. Abhigna reddy Manda (113463065), abhigna.reddy@ou.edu, University of Oklahoma.
-3. Vishal chintapally, vishal_chintapally@ou.edu, University of Oklahoma.
+3. Vishal Chintapally (113477295), vishal_chintapally@ou.edu, University of Oklahoma.
 
 References:
 https://leetcode.com/problems/rotting-oranges/

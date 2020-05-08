@@ -39,7 +39,7 @@ def test_finding_victims():
     adjacent_grid = [grid[i][j + 1], grid[i + 1][j], grid[i + 1][j + 1]]
     victim_name, victim_count, vic_plot = app.finding_victims(adjacent_grid, victim_name, victim_count, time_step, vic_plot)
     def test_sub_2( victim_name, victim_count, vic_plot):
-        return True if victim_name != [] and victim_count != 0 and vic_plot != [] else False
+        return True if victim_count != 0 and vic_plot != [] else False
 
     assert test_sub_2(victim_name, victim_count, vic_plot) is True
 

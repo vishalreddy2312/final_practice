@@ -1,0 +1,20 @@
+# The docker deploy-test
+name: Docker Deployment
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deployment into docker 
+      run: |
+        docker rm -f pytest-container
+        docker build -t python-image .
+        docker run --name pytest-container --env PYTHONPATH=src python-image:latest
